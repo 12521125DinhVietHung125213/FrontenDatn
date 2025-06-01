@@ -155,7 +155,7 @@ function RegistrationForm() {
   };
 
   return (
-    <div style={{width:"1400px"}}  className="form-container-xn">
+    <div style={{width:"1450px", height:'2000px'}}  className="form-container-xn">
       <h2>ĐĂNG KÝ KHÁM BỆNH</h2>
       <p>Vui lòng nhập thông tin</p>
 

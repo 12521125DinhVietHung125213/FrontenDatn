@@ -213,8 +213,8 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section style={{ display: 'flex', justifyContent: 'center', }} className="homepage-collections">
-                    <div className="container--full">
+                <section className="homepage-collections">
+                    <div  style={{ display: 'flex', justifyContent: 'center', }} className="container--full">
                         <div className="homepage-collections__wrapper">
                             <div className="homepage-collections__item">
                                 <Link to="/about" className="collection-grid">
@@ -256,9 +256,9 @@ export default function Home() {
                     </div>
                 </section>
                 <section>
-                <div style={{ display: 'flex', justifyContent: 'center',width:"1500px"}} className="container1">
-                <div className="homepage-product__heading"> Dịch vụ được quan tâm</div>
-                    <div className="product-type">
+                <div  className="container1">
+                <div  className="homepage-product__heading"> Dịch vụ được quan tâm</div>
+                    <div style={{ width:"1450px"}} className="product-type">
                         <div className="row">
                             {/* Sản phẩm mẫu */}
                             
@@ -308,8 +308,8 @@ export default function Home() {
                 </div>
                 </section>
                
-                <section style={{ display: 'flex', justifyContent: 'center',width:"1500px"}}  className="homepage-basic">
-                    <div className="homepage-basic__wrapper">
+                <section   className="homepage-basic">
+                    <div style={{ display: 'flex', justifyContent: 'center',width:"1450px"}} className="homepage-basic__wrapper">
                         <div className="homepage-basic__content">
                             <h2>
                                 Đồng hành cùng bé
@@ -324,14 +324,14 @@ export default function Home() {
                         <div className="homepage-basic__image">
                             <a href="#">
                                 <picture style={{width: '100%'}}>
-                                    <img src="../Images/khambenh.jpg" alt="quansip"/>
+                                    <img src="https://cdn.benhvienthucuc.vn/wp-content/uploads/2021/09/kham-nam-khoa-cho-be-trai-o-dau-an-toan-uy-tin-tai-ha-noi-1.jpg" alt=""/>
                                 </picture>
                             </a>
                         </div>
                     </div>
                 </section>
-                <section style={{ display: 'flex', justifyContent: 'center',width:"1500px"}} className="homepage-brands">
-                    <div className="container--full">
+                <section className="homepage-brands">
+                    <div style={{ display: 'flex', justifyContent: 'center',width:"1450px"}}  className="container--full">
                         <div className="homepage-brands__wrapper">
                             <div className="homepage-banner__item homepage-banner__item--cm24">
                                 <div className="homepage-brands__image">

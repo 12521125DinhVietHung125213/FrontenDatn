@@ -255,7 +255,7 @@ const HospitalInterface = () => {
     }, [searchParams]);
 
     return (
-        <div style={{width:"1400px"}}  className="container-bs">
+        <div  className="container-bs">
             <div className="header-bs">
                 <p>
                     Phòng khám Đa khoa phố nối còn là nơi hội tụ của hơn 15 tiến sĩ, chuyên gia đầu ngành trong mọi lĩnh vực, 
