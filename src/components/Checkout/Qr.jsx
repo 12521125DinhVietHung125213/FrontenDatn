@@ -31,7 +31,7 @@ const QRPayment = () => {
   }, [setIsVisible]);
 
   if (!isVisible) {
-    return null; // Không render gì nếu isVisible là false
+    return null; // Không render gì nếu isVisible là false okkk
   }
 
   return (
