@@ -43,7 +43,7 @@ const Login = () => {
   };
 
   return (
-    <div className="modal-form">
+    <div style={{width:"1400px"}}  className="modal-form">
       <div className="form-login">
         <h2 className="login__heading">Đăng nhập</h2>
         <p className="login__text">

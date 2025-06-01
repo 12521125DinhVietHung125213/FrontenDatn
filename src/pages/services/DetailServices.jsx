@@ -23,7 +23,7 @@ export default function Details() {
   return (
     <Fragment>
         <main>
-            <div class="container1">
+            <div style={{width:"1400px"}}  class="container1">
             <div class="container-product-single">
                     <div class="imgs">
                         <div class="link-page">

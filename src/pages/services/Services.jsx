@@ -11,7 +11,9 @@ export default function Product() {
     useProductFilter();
     AddProduct();
     
-    const [data, setData] = useState([]);
+    const [data, setData] = useState([
+        
+    ]);
     const [totalservice, setTotalProduct] = useState(0);
     const [searchParams, setSearchParams] = useSearchParams();
     const [priceRange, setPriceRange] = useState({ minPrice: 0, maxPrice: Infinity });
@@ -125,7 +127,7 @@ export default function Product() {
     };
     return (
         <Fragment>
-            <div className="all-product-container" style={{ paddingBottom: '30px' }}>
+            <div style={{width:"1400px" , paddingBottom: '30px' }}  className="all-product-container" >
                 <div className="filter">
                     <h2>Dịch vụ khám</h2>
                     <div className="filter-search">

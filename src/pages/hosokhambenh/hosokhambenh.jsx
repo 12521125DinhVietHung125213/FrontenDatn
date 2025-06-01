@@ -63,7 +63,7 @@ useEffect(() => {
   const totalPages = Math.ceil(medicalRecords.length / recordsPerPage);
 
   return (
-    <div className="medical-chart">
+    <div style={{width:"1400px"}}  className="medical-chart">
 
       {totalPages > 1 && (
         <div
