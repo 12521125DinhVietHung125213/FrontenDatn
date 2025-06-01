@@ -269,8 +269,8 @@ export default function Home() {
                                     <div id={`${item.id_dich_vu}`} className="product">
                                         <div className="product-img-wrap" style={{ marginBottom: '8px' }}>
                                             <Link to={`/detail/${item.id_dich_vu}`} className="product-img product-img--small">
-                                                <img className="product-img-1" src={item.hinh_anh_dv} alt="" />
-                                                <img className="product-img-2" src={item.anh_hover} alt="" />
+                                                <img style={{width:"250px"}} className="product-img-1" src={item.hinh_anh_dv} alt="" />
+                                                <img style={{width:"250px"}} className="product-img-2" src={item.anh_hover} alt="" />
                                             </Link>
                                             <div className="product-size">
                                                 <p>Thêm nhanh vào giỏ hàng +</p>
