@@ -154,7 +154,7 @@ export default function Home() {
         <Fragment>
             <div className="main">
                 <Silde/>
-                <section id="section-discounts">
+                <section style={{ display: 'flex', justifyContent: 'center', }} id="section-discounts">
                 <div className="container">
                     <div className="section-discounts-wrapper">
                     <div className="homepage-coupon-card">
@@ -188,7 +188,7 @@ export default function Home() {
                 </div>
                 </section>
 
-                <section className="homepage-search">
+                <section style={{ display: 'flex', justifyContent: 'center', }} className="homepage-search">
                     <div className="container-medium">
                         <div className="homepage-search-wrapper">
                             <h2 className="homepage-search-heading"> Bạn tìm kiếm dịch vụ gì? </h2>
@@ -213,7 +213,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="homepage-collections">
+                <section style={{ display: 'flex', justifyContent: 'center', }} className="homepage-collections">
                     <div className="container--full">
                         <div className="homepage-collections__wrapper">
                             <div className="homepage-collections__item">
@@ -256,7 +256,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section>
-                <div style={{width:"1400px"}}  className="container1">
+                <div style={{ display: 'flex', justifyContent: 'center',width:"1500px"}} className="container1">
                 <div className="homepage-product__heading"> Dịch vụ được quan tâm</div>
                     <div className="product-type">
                         <div className="row">
@@ -308,8 +308,8 @@ export default function Home() {
                 </div>
                 </section>
                
-                <section className="homepage-basic">
-                    <div style={{width:"1400px"}} className="homepage-basic__wrapper">
+                <section style={{ display: 'flex', justifyContent: 'center',width:"1500px"}}  className="homepage-basic">
+                    <div className="homepage-basic__wrapper">
                         <div className="homepage-basic__content">
                             <h2>
                                 Đồng hành cùng bé
@@ -330,7 +330,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="homepage-brands">
+                <section style={{ display: 'flex', justifyContent: 'center',width:"1500px"}} className="homepage-brands">
                     <div className="container--full">
                         <div className="homepage-brands__wrapper">
                             <div className="homepage-banner__item homepage-banner__item--cm24">
@@ -364,7 +364,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="homepage-care-and-share">
+                <section style={{ display: 'flex', justifyContent: 'center',width:"1500px"}} className="homepage-care-and-share">
                     <div className="container--full">
                         <div className="homepage-care-and-share__inner">
                             <a href="#">
@@ -389,7 +389,7 @@ export default function Home() {
                     </div>
                     
                 </section>
-                <section className="homepage-hashtag">
+                <section style={{ display: 'flex', justifyContent: 'center',width:"1500px"}} className="homepage-hashtag">
                     <div className="container--full">
                         <div className="homepage-hashtag__inner">
                             <p className="homepage-hashtag__left">
@@ -407,7 +407,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="homepage-service">
+                <section style={{ display: 'flex', justifyContent: 'center',width:"1500px"}} className="homepage-service">
                     <div className="container--full">
                         <div className="homepage-service__grid">
                             <div className="homepage-service__item">
@@ -474,7 +474,7 @@ export default function Home() {
                         
                     </div>
                 </section>
-                <section className="homepage-irl">
+                <section style={{ display: 'flex', justifyContent: 'center',width:"1500px"}} className="homepage-irl">
                     <div className="container--full">
                         <h2 className="homepage-irl__title">Nhật kí Phòng Khám Đa Khoa Phố Nối</h2>
                         <p className="homepage-irl__description">Chia sẻ câu chuyện cùng chúng tôi</p>
