@@ -11,7 +11,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
 
-  const [data, setData] = useState([
+  const [data] = useState([
     {
       id_tai_khoan: 3,
       ten_nguoi_dung: "Đinh Việt Hùng",
@@ -22,34 +22,37 @@ const Login = () => {
       type: 2
     }
   ]);
+  console.log(data.type)
 
   const navigate = useNavigate();
 
-  const handleLogin = async () => {
-    if (!username.endsWith('@gmail.com')) {
-      setMessage('Tên đăng nhập phải có dạng @gmail.com');
-      return;
+const handleLogin = async () => {
+  if (!username.endsWith('@gmail.com')) {
+    setMessage('Tên đăng nhập phải có dạng @gmail.com');
+    return;
+  }
+
+  try {
+    const user = data[0];
+
+    if (user.email === username && user.mat_khau === password && user.type === 2) {
+      updateUser({
+        id: user.id_tai_khoan,
+        name: user.ten_nguoi_dung,
+        username: user.email
+      });
+      toast.success(`Xin chào ${user.ten_nguoi_dung}!`);
+      navigate('/');
+    } else {
+      setMessage('Thông tin tài khoản hoặc mật khẩu không chính xác!');
     }
+    
+  } catch (error) {
+    console.error(error);
+    setMessage('Có lỗi xảy ra trong quá trình đăng nhập.');
+  }
+};
 
-    try {
-
-      
-      if (data &&  data.type === 2 ) {
-
-        const user = data.user;
-        updateUser({ id: user.id_tai_khoan, name: user.ten_nguoi_dung, username: user.email });
-        toast.success(`Xin chào ${user.ten_nguoi_dung}!`);
-        navigate('/');
-
-      } else {
-        setMessage('Thông tin tài khoản hoặc mật khẩu không chính xác!');
-      }
-      
-    } catch (error) {
-      console.error(error);
-      setMessage('Có lỗi xảy ra trong quá trình đăng nhập.');
-    }
-  };
 
   return (
     <div style={{width:"1500px"}}  className="modal-form">
