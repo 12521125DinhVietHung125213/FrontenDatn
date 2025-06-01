@@ -143,7 +143,7 @@ const handleSendMessage = async (message) => {
   }
  
   return (
-    <div id="ai-chat">
+    <div style={{width:"100%"}} id=" ai-chat">
       <div className="ai-all">
         {/* AI Suggestion List */}
         {showSuggestions && ( // Hiển thị gợi ý nếu `showSuggestions` là true

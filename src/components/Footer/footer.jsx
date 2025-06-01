@@ -3,9 +3,9 @@ import React, { Fragment } from 'react'
 export default function Footer() {
   return (
     <Fragment>
-            <footer style={{width:"1400px"}} className="site-footer">
-                <div  style={{width:"1400px"}}  className="container">
-                    <div  style={{width:"1400px"}} className="footer-top">
+            <footer style={{width:"100%"}} className="site-footer">
+                <div  style={{width:"100%"}}  className="container">
+                    <div  style={{width:"100%"}} className="footer-top">
                         <div className="footer-top-left">
                             <ul>
                                 <li className="footer-top-left__heading"><a href="">Khám phá dịch vụ</a></li>
