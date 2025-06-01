@@ -74,11 +74,71 @@ export default function Home() {
       };
 
       AddProduct();
-      const [data,setData] = useState([]);
+      const [data,setData] = useState([
+        
+            {
+                id_dich_vu: 14,
+                ten_dich_vu: 'Gói kiểm tra chức năng gan',
+                gia: 1800000,
+                mo_ta: 'Gói kiểm tra chức năng gan giúp đánh giá tình trạng sức khỏe gan hoặc tổn thương gan do các nguyên nhân khác.',
+                hinh_anh_dv: 'https://cdn.nhathuoclongchau.com.vn/unsafe/https://cms-prod.s3-sgn09.fptcloud.com/kiem_tra_chuc_nang_gan_la_gi_khi_nao_can_kiem_tra_chuc_nang_gan_Cropped_afc1422e4f.jpg',
+                anh_hover: 'https://cdn.nhathuoclongchau.com.vn/unsafe/https://cms-prod.s3-sgn09.fptcloud.com/kiem_tra_chuc_nang_gan_la_gi_khi_nao_can_kiem_tra_chuc_nang_gan_Cropped_afc1422e4f.jpg',
+                thong_bao: 'Khuyến mãi mùa hè!',
+                uu_dai: 'Giảm 10%',
+                total_quantity: 120,
+            },
+            {
+                id_dich_vu: 1,
+                ten_dich_vu: 'Khám tổng quát cho nam',
+                gia: 800000,
+                mo_ta: 'Gói khám tổng quát cho nam giới được thiết kế nhằm kiểm tra định kỳ hàng năm để chủ động bảo vệ sức khỏe.',
+                hinh_anh_dv: '/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg',
+                anh_hover: '/images/khamnam_hover.jpg',
+                thong_bao: 'Miễn phí tư vấn!',
+                uu_dai: 'Tặng phiếu xét nghiệm',
+                total_quantity: 98,
+            },
+            {
+                id_dich_vu: 2,
+                ten_dich_vu: 'Khám sức khỏe tiền hôn nhân cho nam',
+                gia: 2600000,
+                mo_ta: 'Gói khám sức khỏe tiền hôn nhân dành cho nam giới giúp chuẩn bị cho cuộc sống hôn nhân khỏe mạnh và hạnh phúc.',
+                hinh_anh_dv: '/images/khamtienhonnhan.jpg',
+                anh_hover: '/images/khamtienhonnhan_hover.jpg',
+                thong_bao: 'Gói hot nhất tháng!',
+                uu_dai: 'Giảm 15%',
+                total_quantity: 75,
+            },
+            {
+                id_dich_vu: 5,
+                ten_dich_vu: 'Gói khám xét nhiệm bạch cầu',
+                gia: 250000,
+                mo_ta: 'Gói khám xét nghiệm bạch cầu tập trung vào việc kiểm tra khả năng miễn dịch và phát hiện bệnh sớm.',
+                hinh_anh_dv: '/images/xetnhiembachcau.jpg',
+                anh_hover: '/images/xetnhiembachcau_hover.jpg',
+                thong_bao: 'Ưu đãi đến 30/06',
+                uu_dai: 'Giảm 5%',
+                total_quantity: 200,
+            },
+            {
+                id_dich_vu: 19,
+                ten_dich_vu: 'Gói khám mũi họng',
+                gia: 500000,
+                mo_ta: 'Gói khám mũi họng giúp phát hiện và điều trị sớm các bệnh lý tai mũi họng thường gặp.',
+                hinh_anh_dv: '/images/Screenshot 2024-12-15 094313.jpg',
+                anh_hover: '/images/khammuihover.jpg',
+                thong_bao: 'Hỗ trợ miễn phí soi tai mũi họng',
+                uu_dai: 'Tặng voucher 100K',
+                total_quantity: 160,
+            },
+ 
+
+      ]);
+      console.log(data)
+      
   
       const loadData = async() =>{
-          const response = await axios.get("http://localhost:5000/api/top5services");
-          setData(response.data);
+          setData(data);
       };
   
       useEffect(()=>{
