@@ -154,8 +154,8 @@ export default function Home() {
         <Fragment>
             <div className="main">
                 <Silde/>
-                <section style={{ display: 'flex', justifyContent: 'center', }} id="section-discounts">
-                <div className="container">
+                <section  id="section-discounts">
+                <div style={{ display: 'flex', justifyContent: 'center', }} className="container">
                     <div className="section-discounts-wrapper">
                     <div className="homepage-coupon-card">
                         {coupons.map((coupon, index) => (
