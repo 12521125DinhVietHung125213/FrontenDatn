@@ -11,12 +11,12 @@ export default function Silde() {
             <section>
                 <div class="banner-slide"> 
                   <Link to={'/datlich'}>
-                    <img  class="slide-img" src="../Images/Screenshot 2024-09-30 202652_upscayl_4x_ultrasharp.png" alt="slide" />
+                    <img style={{width:"1500px"}}  class="slide-img" src="../Images/Screenshot 2024-09-30 202652_upscayl_4x_ultrasharp.png" alt="slide" />
                   </Link>
     
-                    <img  class="slide-img" src="../Images/Screenshot 2024-09-30 210207_upscayl_4x_ultrasharp.png" alt="slide"/>
+                    <img style={{width:"1500px"}}  class="slide-img" src="../Images/Screenshot 2024-09-30 210207_upscayl_4x_ultrasharp.png" alt="slide"/>
 
-                    <img  class="slide-img" src="../Images/bannerphongkham7.jpg" alt="slide"/>
+                    <img style={{width:"1500px"}}   class="slide-img" src="../Images/bannerphongkham7.jpg" alt="slide"/>
       
                 </div>
             </section>
