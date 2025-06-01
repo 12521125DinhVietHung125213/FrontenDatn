@@ -48,7 +48,7 @@ const calculateSuggestion = (height, weight, gender) => {
   
 
   return (
-    <div style={{ width: '1450px', height:'1000px', margin: '150px auto 0px' }}>
+    <div style={{ width: '1450px', height:'1300px', margin: '150px auto 0px' }}>
       <h2 style={{ textAlign: 'center', margin: '40px 0', fontWeight: '500' }}>Tư vấn cân nặng</h2>
       <div className="step">
         <span>1</span>

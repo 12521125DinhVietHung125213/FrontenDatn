@@ -11,6 +11,18 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
 
+  const [data, setData] = useState([
+    {
+      id_tai_khoan: 3,
+      ten_nguoi_dung: "Đinh Việt Hùng",
+      mat_khau: "hungcute",
+      email: "dinhviethung@gmail.com",
+      avatar: "/images/viethung.jpg",
+      so_dien_thoai: "0343493518",
+      type: 2
+    }
+  ]);
+
   const navigate = useNavigate();
 
   const handleLogin = async () => {
@@ -20,14 +32,11 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/login', {
-        email: username,
-        mat_khau: password,
-      });
 
-      if (response.data && response.data.user && response.data.user.type === 2 ) {
+      
+      if (data &&  data.type === 2 ) {
 
-        const user = response.data.user;
+        const user = data.user;
         updateUser({ id: user.id_tai_khoan, name: user.ten_nguoi_dung, username: user.email });
         toast.success(`Xin chào ${user.ten_nguoi_dung}!`);
         navigate('/');

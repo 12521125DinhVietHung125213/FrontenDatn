@@ -203,32 +203,7 @@ export default function Cartpage() {
 
             else if (paymentMethod === "BuyLate") {
                 setShowQR(false);
-                const orderData = {
-                   id_benh_nhan: user.id, // Thay đổi giá trị này thành ID của khách hàng
-                   ngay_dat_lich: new Date().toISOString().slice(0, 10), // Lấy ngày hiện tại
-                   tong_tien: tong_tien, // Tổng tiền
-                   trang_thai: 1,
-                   ho_ten_bn: ho_ten_bn,
-                   dia_chi: `${dia_chi}, ${phuong_xa}, ${quan_huyen}, ${tinh_thanh}`,
-                   ghi_chu: ghi_chu,
-                   sdt_bn: sdt_bn,
-                   ngay_sinh:ngay_sinh,
-                   gioi_tinh:gioi_tinh,
-                   trang_thai_thanh_toan:1,
-                   loai_thanh_toan:paymentMethod,
-               
-                   chi_tiet_lich_kham: list.map(item => ({
-                   id_dich_vu: Number(item.id),
-                   ten_dich_vu: item.name, 
-                   so_luong: item.quantity,
-                   id_khoa:item.id_khoa,
-                   gia: item.price,
-                   hinh_anh_dv:item.img
-                   }))
-               }
-               console.log(orderData)
-               axios.post("http://localhost:5000/api/addOrder", orderData)
-               .then( () => {setState({ho_ten_bn :"",sdt_bn:"",dia_chi:"",tinh_thanh:"",phuong_xa:"",quan_huyen:"",ghi_chu:"",ngay_sinh:"",gioi_tinh:""})
+
 
                        list = [];
                        const vocher = {coupon_name: "novoucher", value: 0}
@@ -239,12 +214,8 @@ export default function Cartpage() {
                        localStorage.setItem("voucher_sale", JSON.stringify(vocher));
                        LoadData();
                        toast.success(`Dịch vụ đã được đặt!`, { autoClose: 1000 })
-   
-               })
-               .catch(error => {
-               console.error(error);
-               alert("Đã có lỗi xảy ra, vui lòng thử lại sau");
-               });
+
+
            } 
             } 
             
@@ -316,7 +287,7 @@ export default function Cartpage() {
         <div className="main">
 
                 {/* <!-- Phần container --> */}
-                <div style={{width:"1500px" , height:'1000px'}}  className="cartPage-container">
+                <div style={{width:"1500px" , height:'1400px'}}  className="cartPage-container">
                     <form className="info">
                         <div className="info-header">
                             <h2>Thông tin đăng ký khám bệnh</h2>

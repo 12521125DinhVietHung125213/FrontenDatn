@@ -155,7 +155,7 @@ export default function Home() {
             <div className="main">
                 <Silde/>
                 <section  id="section-discounts">
-                <div style={{ width:'1500px' }} className="container">
+                <div style={{ width:'1500px', marginLeft:'20%' }} className="container">
                     <div className="section-discounts-wrapper">
                     <div className="homepage-coupon-card">
                         {coupons.map((coupon, index) => (
@@ -214,7 +214,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section className="homepage-collections">
-                    <div style={{width:'1500px'}} className="container--full">
+                    <div style={{width:'1500px',  marginLeft:'5%'}} className="container--full">
                         <div className="homepage-collections__wrapper">
                             <div className="homepage-collections__item">
                                 <Link to="/about" className="collection-grid">
@@ -309,7 +309,7 @@ export default function Home() {
                 </section>
                
                 <section   className="homepage-basic">
-                    <div style={{ display: 'flex', justifyContent: 'center',width:"1450px"}} className="homepage-basic__wrapper">
+                    <div style={{width:"1500px"}} className="homepage-basic__wrapper">
                         <div className="homepage-basic__content">
                             <h2>
                                 Đồng hành cùng bé
@@ -323,7 +323,7 @@ export default function Home() {
                         </div>
                         <div className="homepage-basic__image">
                             <a href="#">
-                                <picture style={{width: '100%'}}>
+                                <picture style={{width: '120%'}}>
                                     <img src="https://benhvienphuongdong.vn/public/uploads/dich-vu/kham-suc-khoe-cho-tre-em-1.jpg" alt=""/>
                                 </picture>
                             </a>
@@ -331,7 +331,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section className="homepage-brands">
-                    <div style={{width:"1500 px"}}  className="container--full">
+                    <div style={{width:"1500 px, marginLeft:'5%'"}}  className="container--full">
                         <div className="homepage-brands__wrapper">
                             <div className="homepage-banner__item homepage-banner__item--cm24">
                                 <div className="homepage-brands__image">

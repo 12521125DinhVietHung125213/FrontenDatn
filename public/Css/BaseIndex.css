@@ -180,7 +180,7 @@ html{
     display: block;
     padding:0 30px ;
     line-height: 50px;
-    font-size: 13px;
+    font-size: 18px;
     color:var(--text-color);
     font-weight: 700;
 }
