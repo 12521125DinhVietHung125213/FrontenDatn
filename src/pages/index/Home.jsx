@@ -256,7 +256,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section>
-                <div className="container1">
+                <div style={{width:"1400px"}}  className="container1">
                 <div className="homepage-product__heading"> Dịch vụ được quan tâm</div>
                     <div className="product-type">
                         <div className="row">
@@ -309,7 +309,7 @@ export default function Home() {
                 </section>
                
                 <section className="homepage-basic">
-                    <div className="homepage-basic__wrapper">
+                    <div style={{width:"1400px"}} className="homepage-basic__wrapper">
                         <div className="homepage-basic__content">
                             <h2>
                                 Đồng hành cùng bé
