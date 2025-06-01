@@ -1,7 +1,7 @@
 /*modal*/
 .modal-form{
 width:100%;
-height: 800px;
+height: 1000px;
 margin-top: 80px;
 position: relative;
 background-color: #d9d9d9;
@@ -15,10 +15,10 @@ background-color: #d9d9d9;
     text-align: center;
     justify-content: center;
     Width:90%;
-    max-width: 600px;
+    max-width: 800px;
     min-height:518px;
     position: absolute;
-    left:30%;
+    left:22%;
 }
 .form-login1{
     margin-top: 100px;
@@ -30,9 +30,9 @@ background-color: #d9d9d9;
     justify-content: center;
     Width:90%;
     height: 682px;
-    max-width: 600px;
+    max-width: 800px;
     position: absolute;
-    left:30%;
+    left:22%;
 }
 
 .form-login2{
@@ -88,7 +88,7 @@ background-color: #d9d9d9;
     background-color: #000;
     color: #fff;
     font-size: 13px;
-    width: 540px;
+    width: 718px;
     
 }
 .btn--login:hover{

@@ -5,7 +5,7 @@ export default function About() {
     <div id="polyclinic-story">
       <section className="cs-banner">
         <div className="cs-banner__image">
-          <img src="../Images/aboutdkpnbanner_upscayl_2x_ultrasharp.png" alt="" />
+          <img style={{width:"1500px"}} src="../Images/aboutdkpnbanner_upscayl_2x_ultrasharp.png" alt="" />
         </div>
         <div className="cs-banner__content">
         </div>
@@ -46,16 +46,6 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="cs-caption">
-        <div className="container-medium">
-          <h2 className="cs-caption__heading">
-            <span>“</span>
-            Chúng tôi cam kết cung cấp dịch vụ y tế chất lượng và tận tâm nhất cho bệnh nhân.
-            <span>“</span>
-          </h2>
-          <span className="cs-caption__author">Bác sĩ Nguyễn Văn Ánh, Giám đốc Phòng khám</span>
         </div>
       </section>
       <section className="cs-story">
@@ -165,7 +155,7 @@ export default function About() {
         </div>
       </section>
       <section className="cs-thanks">
-        <div className="container-medium">
+        <div style={{width:"1500px"}} className="container-medium">
           <h2 className="cs-thanks__heading">
             Trong cuộc sống có quá nhiều sự lựa chọn,
             <br />

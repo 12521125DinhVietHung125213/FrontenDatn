@@ -155,7 +155,7 @@ export default function Home() {
             <div className="main">
                 <Silde/>
                 <section  id="section-discounts">
-                <div style={{ display: 'flex', justifyContent: 'center', }} className="container">
+                <div style={{ width:'1500px' }} className="container">
                     <div className="section-discounts-wrapper">
                     <div className="homepage-coupon-card">
                         {coupons.map((coupon, index) => (
@@ -188,7 +188,7 @@ export default function Home() {
                 </div>
                 </section>
 
-                <section style={{ display: 'flex', justifyContent: 'center', }} className="homepage-search">
+                <section className="homepage-search">
                     <div className="container-medium">
                         <div className="homepage-search-wrapper">
                             <h2 className="homepage-search-heading"> Bạn tìm kiếm dịch vụ gì? </h2>
@@ -214,7 +214,7 @@ export default function Home() {
                     </div>
                 </section>
                 <section className="homepage-collections">
-                    <div  style={{ display: 'flex', justifyContent: 'center', }} className="container--full">
+                    <div style={{width:'1500px'}} className="container--full">
                         <div className="homepage-collections__wrapper">
                             <div className="homepage-collections__item">
                                 <Link to="/about" className="collection-grid">
@@ -324,14 +324,14 @@ export default function Home() {
                         <div className="homepage-basic__image">
                             <a href="#">
                                 <picture style={{width: '100%'}}>
-                                    <img src="https://cdn.benhvienthucuc.vn/wp-content/uploads/2021/09/kham-nam-khoa-cho-be-trai-o-dau-an-toan-uy-tin-tai-ha-noi-1.jpg" alt=""/>
+                                    <img src="https://benhvienphuongdong.vn/public/uploads/dich-vu/kham-suc-khoe-cho-tre-em-1.jpg" alt=""/>
                                 </picture>
                             </a>
                         </div>
                     </div>
                 </section>
                 <section className="homepage-brands">
-                    <div style={{ display: 'flex', justifyContent: 'center',width:"1450px"}}  className="container--full">
+                    <div style={{width:"1500 px"}}  className="container--full">
                         <div className="homepage-brands__wrapper">
                             <div className="homepage-banner__item homepage-banner__item--cm24">
                                 <div className="homepage-brands__image">
@@ -389,8 +389,8 @@ export default function Home() {
                     </div>
                     
                 </section>
-                <section style={{ display: 'flex', justifyContent: 'center',width:"1500px"}} className="homepage-hashtag">
-                    <div className="container--full">
+                <section  className="homepage-hashtag">
+                    <div style={{width:"1500px"}} className="container--full">
                         <div className="homepage-hashtag__inner">
                             <p className="homepage-hashtag__left">
                             "Phòng khám Đa khoa Phố Nối – Chăm sóc sức khỏe toàn diện, tận tâm từ trái tim!"
@@ -407,8 +407,8 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section style={{ display: 'flex', justifyContent: 'center',width:"1500px"}} className="homepage-service">
-                    <div className="container--full">
+                <section  className="homepage-service">
+                    <div style={{width:"1500px"}} className="container--full">
                         <div className="homepage-service__grid">
                             <div className="homepage-service__item">
                                 <div className="infomation-card">
@@ -474,8 +474,8 @@ export default function Home() {
                         
                     </div>
                 </section>
-                <section style={{ display: 'flex', justifyContent: 'center',width:"1500px"}} className="homepage-irl">
-                    <div className="container--full">
+                <section  className="homepage-irl">
+                    <div style={{width:"1500px"}} className="container--full">
                         <h2 className="homepage-irl__title">Nhật kí Phòng Khám Đa Khoa Phố Nối</h2>
                         <p className="homepage-irl__description">Chia sẻ câu chuyện cùng chúng tôi</p>
                         <div className="homepage-irl__slide slick-slider"> 

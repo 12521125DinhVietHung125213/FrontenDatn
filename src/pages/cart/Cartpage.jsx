@@ -316,7 +316,7 @@ export default function Cartpage() {
         <div className="main">
 
                 {/* <!-- Phần container --> */}
-                <div style={{width:"1400px"}}  className="cartPage-container">
+                <div style={{width:"1500px" , height:'1000px'}}  className="cartPage-container">
                     <form className="info">
                         <div className="info-header">
                             <h2>Thông tin đăng ký khám bệnh</h2>

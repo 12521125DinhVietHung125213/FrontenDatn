@@ -11,10 +11,19 @@ export default function Details() {
 
     const{id_dich_vu} = useParams();
 
-    useEffect(()=>{
-        axios.get(`http://localhost:5000/api/getgdvid/${id_dich_vu}`)
-        .then((resp) => setData({...resp.data[0]}));
-    },[id_dich_vu]);
+    useEffect(() => {
+    // Ưu tiên gọi từ API nếu có, còn không thì lấy từ localStorage
+    const storedData = localStorage.getItem('sanpham');
+    if (storedData) {
+        setData(JSON.parse(storedData));
+    } else {
+        // fallback nếu muốn, hoặc để trống nếu đang chạy frontend only
+        // axios.get(`http://localhost:5000/api/getgdvid/${id_dich_vu}`)
+        //   .then((resp) => setData({...resp.data[0]}));
+    }
+    }, [id_dich_vu]);
+
+    
 
     const formatCurrency = (number) => {
         return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(number);

@@ -70,7 +70,7 @@ function AppointmentForm() {
   };
 
   return (
-    <div style={{width:"1450px" , height:'2000px'}}  className="form-container-dl">
+    <div style={{width:"1500px" , height:'1000px'}}  className="form-container-dl">
       <h2>ĐĂNG KÝ KHÁM BỆNH</h2>
       <p>Quý khách hàng có nhu cầu đặt hẹn khám tại Hệ thống phòng khám đa khoa Phố Nối</p>
 

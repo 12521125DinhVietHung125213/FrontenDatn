@@ -57,7 +57,7 @@ export default function Register() {
 
   return (
     <Fragment>
-      <div style={{width:"1400px"}}  className="modal-form">
+      <div style={{width:"1500px"}}  className="modal-form">
         <form className="form-login1" onSubmit={handleSubmit}>
           <h2 className="login__heading">Đăng kí tài khoản</h2>
           <p className="login__text">

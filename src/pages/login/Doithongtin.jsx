@@ -80,7 +80,7 @@ export default function UpdateProfile() {
   }
 
   return (
-    <div style={{width:"1400px"}}  className="modal-form">
+    <div style={{width:"1500px"}}  className="modal-form">
       <form className="form-login2" onSubmit={handleSubmit}>
         <h2 className="login__heading">Cập nhật tài khoản</h2>
 

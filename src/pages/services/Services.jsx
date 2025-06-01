@@ -12,7 +12,305 @@ export default function Product() {
     AddProduct();
     
     const [data, setData] = useState([
-        
+          {
+    "id_dich_vu": 1,
+    "ten_dich_vu": "Khám tổng quát cho nam",
+    "gia": 600000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 2
+  },
+  {
+    "id_dich_vu": 2,
+    "ten_dich_vu": "Khám sức khỏe tiền hôn nhân cho nam",
+    "gia": 700000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 3
+  },
+  {
+    "id_dich_vu": 3,
+    "ten_dich_vu": "Gói khám sức khỏe dinh dưỡng nam giới",
+    "gia": 800000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 4
+  },
+  {
+    "id_dich_vu": 4,
+    "ten_dich_vu": "Gói khám tổng quát sức khỏe cho nữ",
+    "gia": 900000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 5
+  },
+  {
+    "id_dich_vu": 5,
+    "ten_dich_vu": "Gói khám xét nhiệm bạch cầu",
+    "gia": 1000000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 6
+  },
+  {
+    "id_dich_vu": 6,
+    "ten_dich_vu": "Khám sức khỏe tổng quát cho trẻ em",
+    "gia": 1100000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 7
+  },
+  {
+    "id_dich_vu": 7,
+    "ten_dich_vu": "Gói khám tiền sản cho bà mẹ",
+    "gia": 1200000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 8
+  },
+  {
+    "id_dich_vu": 8,
+    "ten_dich_vu": "Gói kiểm tra huyết áp định kỳ",
+    "gia": 1300000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 9
+  },
+  {
+    "id_dich_vu": 9,
+    "ten_dich_vu": "Khám sức khỏe tổng quát người cao tuổi",
+    "gia": 1400000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 10
+  },
+  {
+    "id_dich_vu": 10,
+    "ten_dich_vu": "Gói kiểm tra sức khỏe răng miệng",
+    "gia": 1500000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 1
+  },
+  {
+    "id_dich_vu": 11,
+    "ten_dich_vu": "Khám mắt định kỳ",
+    "gia": 1600000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 2
+  },
+  {
+    "id_dich_vu": 12,
+    "ten_dich_vu": "Khám và tư vấn dinh dưỡng người lớn",
+    "gia": 1700000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 3
+  },
+  {
+    "id_dich_vu": 13,
+    "ten_dich_vu": "Gói kiểm tra tim mạch",
+    "gia": 1800000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 4
+  },
+  {
+    "id_dich_vu": 14,
+    "ten_dich_vu": "Gói kiểm tra chức năng gan",
+    "gia": 1900000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 5
+  },
+  {
+    "id_dich_vu": 15,
+    "ten_dich_vu": "Khám sức khỏe cho nhân viên công ty",
+    "gia": 2000000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 6
+  },
+  {
+    "id_dich_vu": 16,
+    "ten_dich_vu": "Gói khám định kì cho trẻ em",
+    "gia": 2100000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 7
+  },
+  {
+    "id_dich_vu": 17,
+    "ten_dich_vu": "Gói khám sàng lọc các diện bệnh",
+    "gia": 2200000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 8
+  },
+  {
+    "id_dich_vu": 18,
+    "ten_dich_vu": "Gói khám mũi họng",
+    "gia": 2300000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 9
+  },
+  {
+    "id_dich_vu": 19,
+    "ten_dich_vu": "Gói khám điều trị xoang",
+    "gia": 2400000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 10
+  },
+  {
+    "id_dich_vu": 20,
+    "ten_dich_vu": "Gói khám và điều trị viêm phổi",
+    "gia": 2500000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 1
+  },
+  {
+    "id_dich_vu": 21,
+    "ten_dich_vu": "Dịch vụ chụp x-quang phổi",
+    "gia": 2600000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 2
+  },
+  {
+    "id_dich_vu": 22,
+    "ten_dich_vu": "Gói tẩy trắng răng",
+    "gia": 2700000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 3
+  },
+  {
+    "id_dich_vu": 23,
+    "ten_dich_vu": "Khám tai mũi họng tổng quát",
+    "gia": 2800000,
+    "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
+    "hinh_anh_dv": "/images/kham-suc-khoe-sinh-san-cho-nam-va-nu.jpg",
+    "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
+    "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
+    "thong_bao": "Ngày hội sức khỏe",
+    "uu_dai": "Hot",
+    "anh_hover": "/images/quantam.jpg",
+    "id_khoa": 4
+  }
     ]);
     const [totalservice, setTotalProduct] = useState(0);
     const [searchParams, setSearchParams] = useSearchParams();
@@ -127,7 +425,7 @@ export default function Product() {
     };
     return (
         <Fragment>
-            <div style={{width:"1400px" , paddingBottom: '30px' }}  className="all-product-container" >
+            <div style={{width:"1500px" , paddingBottom: '30px' }}  className="all-product-container" >
                 <div className="filter">
                     <h2>Dịch vụ khám</h2>
                     <div className="filter-search">
@@ -202,10 +500,15 @@ export default function Product() {
                                 <div key={item.id_dich_vu} className="col p-2-4">
                                     <div id={`${item.id_dich_vu}`} className="product">
                                         <div className="product-img-wrap" style={{ marginBottom: '8px' }}>
-                                            <Link to={`/detail/${item.id_dich_vu}`} className="product-img product-img--small">
-                                                <img className="product-img-1" src={item.hinh_anh_dv} alt="" />
-                                                <img className="product-img-2" src={item.anh_hover} alt="" />
+                                            <Link
+                                            to={`/detail/${item.id_dich_vu}`}
+                                            className="product-img product-img--small"
+                                            onClick={() => localStorage.setItem('sanpham', JSON.stringify(item))}
+                                            >
+                                            <img className="product-img-1" src={item.hinh_anh_dv} alt="" />
+                                            <img className="product-img-2" src={item.anh_hover} alt="" />
                                             </Link>
+
                                             <div className="product-size">
                                                 <p>Thêm nhanh vào giỏ hàng +</p>
                                                 <div className="btn btn--size">Thêm dịch vụ khám</div>
