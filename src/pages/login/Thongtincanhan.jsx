@@ -103,7 +103,7 @@ export default function EditThongTin() {
       };
 
   return (
-    <div style={{width:"1200px", marginLeft:'30%', marginTop:'100px'}}  className="edit-benhnhan-container">
+    <div style={{width:"1200px", marginLeft:'40%', marginTop:'100px', height:'1800px'}}  className="edit-benhnhan-container">
       <h1 className="edit-benhnhan-title">Cập nhật thông tin Bệnh Nhân</h1>
       <form className="edit-benhnhan-form" onSubmit={handleSubmit}>
         <div className="edit-benhnhan-form-group">
