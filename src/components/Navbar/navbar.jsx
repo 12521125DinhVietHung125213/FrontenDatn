@@ -32,8 +32,8 @@ export default function Navbar() {
       <header className="site-header">
         
         <div className="topbar" style={{display: 'block'}}>
-            <a href="">Giảm ngay 20% cho tất cả dịch vụ khám chữa bệnh tại phòng khám, giúp bạn an tâm hơn mà vẫn tiết kiệm chi phí!</a>
-            <a href=""> "Đăng ký ngay"</a>
+            <a style={{display: 'block', fontSize:'20px'}} href="">Giảm ngay 20% cho tất cả dịch vụ khám chữa bệnh tại phòng khám, giúp bạn an tâm hơn mà vẫn tiết kiệm chi phí!</a>
+            <a style={{display: 'block' , fontSize:'20px'}} href=""> "Đăng ký ngay"</a>
 
         </div>
         <div className="header">
@@ -49,9 +49,6 @@ export default function Navbar() {
 
                     <ul className="header__navbar-list">
                         <li className="header__navbar-product">
-                            <Link to="/bacsi" className="header__navbar-link">
-                                Chuyên Khoa
-                            </Link>
                             
                             <div className="header__navbar-product-menu-wrap">
                                 <div className="header__navbar-product-menu">
@@ -222,11 +219,6 @@ export default function Navbar() {
 
                         <li className="header__navbar-item">
                             <Link to="/datlich" className="header__navbar-link">Đặt lịch khám</Link>
-                        </li>
-
-
-                        <li className="header__navbar-item">
-                            <a href="" className="header__navbar-link">Blog</a>
                         </li>
 
                     </ul>
