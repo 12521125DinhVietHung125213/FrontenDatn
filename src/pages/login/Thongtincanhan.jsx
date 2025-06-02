@@ -19,7 +19,16 @@ const initiaState = {
 };
 
 export default function EditThongTin() {
-  const [state, setState] = useState(initiaState);
+  const [state, setState] = useState({
+  ho_ten: "Đinh Việt Hùng",
+  ngay_sinh: "2003-06-18",
+  gioi_tinh: "1", // 1 = Nam
+  so_dien_thoai: "0343493518",
+  email: "dinhviethung@gmail.com",
+  dia_chi: "Tổ 11, Phường Hoàng Diệu, Thành phố Thái Bình",
+  hinh_anh_bn: "https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/476799820_1839250853500195_8639923994666199777_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=B4JFpr7nbYYQ7kNvwF6qR3r&_nc_oc=AdmyBiD3HFi1BvxTsoF405TLQS7Gx5us9tGY7IySUMlb9gVQh5BNtfpZcgoY0thMnTI&_nc_zt=23&_nc_ht=scontent.fhan5-11.fna&_nc_gid=Ixstd1Y42ea6IQmfaxmFpA&oh=00_AfIpAFrF_ZY754kvfDlbMQxdgcA4PFRdo0zIfC03dq3Jhw&oe=68437CC3",
+  cmnd: "034000203349"
+});
   const { ho_ten, ngay_sinh, gioi_tinh, dia_chi, so_dien_thoai, email, cmnd, hinh_anh_bn, ngay_vao_kham, ngay_xuat_phong } = state;
   const navigate = useNavigate();
   const { user } = useUser();
@@ -44,11 +53,6 @@ export default function EditThongTin() {
     }
   }, [user]);
 
-  useEffect(() => {
-    axios.get(`http://localhost:5000/api/getbenhnhan/${idUser}`)
-      .then((resp) => setState({ ...resp.data[0] }));
-  }, [idUser]);
-  
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -99,7 +103,7 @@ export default function EditThongTin() {
       };
 
   return (
-    <div className="edit-benhnhan-container">
+    <div style={{width:"1200px", marginLeft:'30%', marginTop:'100px'}}  className="edit-benhnhan-container">
       <h1 className="edit-benhnhan-title">Cập nhật thông tin Bệnh Nhân</h1>
       <form className="edit-benhnhan-form" onSubmit={handleSubmit}>
         <div className="edit-benhnhan-form-group">

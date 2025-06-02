@@ -226,11 +226,6 @@ export default function Navbar() {
                 </div>
 
                 <div className="header__actions">
-                    <div className="header__actions-search">
-                        <a className="header__actions-link">
-                            <i className="fa-solid fa-magnifying-glass fa-xl"></i>
-                        </a>
-                    </div>
                     <div className="header__actions-account">
                     <Link to="/DangNhap" className="header__actions-link">
                         <i className="fa-solid fa-user fa-xl"></i>

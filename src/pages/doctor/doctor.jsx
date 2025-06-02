@@ -306,11 +306,11 @@ const HospitalInterface = () => {
                 {data.map((item) => (
                     <div key={item.id_bac_si} className="doctor-card">
                         <img src={item.hinh_anh_bs} alt="" className="doctor-image" />
-                        <p>Bác sĩ</p>
-                        <h3>
+                        <p style={{fontSize: '26px'}}>Bác sĩ</p>
+                        <h3 style={{fontSize: '26px'}}>
                             {item.bang_cap} - {item.ho_ten}
                         </h3>
-                        <p>{item.chuc_danh} – {item.mo_ta}</p>
+                        <p style={{fontSize: '26px'}}>{item.chuc_danh} – {item.mo_ta}</p>
                     </div>
                 ))}
             </div>

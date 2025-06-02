@@ -511,7 +511,7 @@ export default function Product() {
 
                                             <div className="product-size">
                                                 <p>Thêm nhanh vào giỏ hàng +</p>
-                                                <div className="btn btn--size">Thêm dịch vụ khám</div>
+                                                <div style={{fontSize: '26px'}} className="btn btn--size">Thêm dịch vụ khám</div>
                                             </div>
                                         </div>
                                         <div className="product-content">
@@ -522,12 +522,12 @@ export default function Product() {
                                             </div>
                                             <a className="product-name">{item.ten_dich_vu}</a>
                                             <div className="product-price-wrap">
-                                                <div className="product-price">{formatCurrency(item.gia)}</div>
+                                                <div style={{fontSize: '26px'}} className="product-price">{formatCurrency(item.gia)}</div>
                                             </div>
-                                            <div className="product-discount">
-                                                {item.thong_bao}
+                                            <div style={{fontSize: '26px'}} className="product-discount">
+                                                { item.thong_bao}
                                             </div>
-                                            <div className="sale-tag product-tag">{item.uu_dai}</div>
+                                            <div  className="sale-tag product-tag">{item.uu_dai}</div>
                                         </div>
 
                                     </div>

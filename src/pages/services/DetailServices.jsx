@@ -62,15 +62,15 @@ export default function Details() {
                         </div>
                     </div>
                     <div class="content">
-                        <h1 class="content__heading">{sanpham.ten_dich_vu}</h1>
+                        <h1 style={{fontSize: '26px'}} class="content__heading">{sanpham.ten_dich_vu}</h1>
                         <div class="review-rating">
-                            <p class="review-label">
+                            <p style={{fontSize: '26px'}} class="review-label">
                                 Số khách hàng đã sử dụng(web): 15
                             </p>  
                                               
                         </div>
 
-                        <p class="content__price">{formatCurrency(sanpham.gia)}</p>
+                        <p style={{fontSize: '26px'}} class="content__price">{formatCurrency(sanpham.gia)}</p>
                         <div class="content__discount">{sanpham.thong_bao}</div>
                         <div style={{ display: 'none' }} className="product-content__option">
                                                 <div className="product-content__option-item-wrap active">
@@ -86,7 +86,7 @@ export default function Details() {
                                     <span>1</span>
                                     <button class="btn-increase">+</button>
                                 </div>
-                                <div class="btn btn-addCart">
+                                <div style={{fontSize: '26px'}} class="btn btn-addCart">
                                     Thêm dịch vụ
                                 </div>
                             </div>
