@@ -43,7 +43,7 @@ export default function Product() {
     "ten_dich_vu": "Gói khám sức khỏe dinh dưỡng nam giới",
     "gia": 800000,
     "mo_ta": "Gói khám tổng quát cho nam giới được thiết kế nhằm đánh giá toàn diện tình trạng sức khỏe hiện tại.",
-    "hinh_anh_dv": "https://production-cdn.pharmacity.io/digital/original/plain/blog/540a8641541e08cb3a36f7e3dbdadadd1741547296.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAUYXZVMJM5QUYWSVO%2F20250502%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Date=20250502T051942Z&X-Amz-SignedHeaders=host&X-Amz-Expires=600&X-Amz-Signature=e7d750415ae80edde33f281bc978d0d6d7168068707dbf2f390948290b896411",
+    "hinh_anh_dv": "https://careplusvn.com/Uploads/t/ta/tam-soat-dinh-duong-vi4-1-1_0008171_710.png",
     "loi_ich_kham": "Phát hiện sớm dấu hiệu bất thường, các nguy cơ bệnh lý phổ biến.",
     "huong_dan_kham": "Nên khám định kỳ mỗi năm một lần, nhịn ăn trước 8 tiếng.",
     "thong_bao": "Ngày hội sức khỏe",
