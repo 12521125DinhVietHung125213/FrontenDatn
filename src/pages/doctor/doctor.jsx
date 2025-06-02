@@ -257,13 +257,13 @@ const HospitalInterface = () => {
     return (
         <div  className="container-bs">
             <div className="header-bs">
-                <p>
+                <p style={{fontSize: '26px'}}>
                     Phòng khám Đa khoa phố nối còn là nơi hội tụ của hơn 15 tiến sĩ, chuyên gia đầu ngành trong mọi lĩnh vực, 
                     phần lớn các chuyên gia đều đã và đang làm việc tại các bệnh viện lớn như Bệnh viện Bạch Mai, 
                     Bệnh viện 108, Bệnh viện 103, Bệnh viện Việt Đức, Bệnh viện Phụ sản Trung ương, 
                     Bệnh viện Nhi Trung ương, Bệnh viện Tai – Mũi – Họng Trung ương… và luôn hành nghề theo tiêu chí:
                 </p>
-                <blockquote>“Khám với chuyên gia – Tận tâm như người nhà”</blockquote>
+                <blockquote style={{fontSize: '26px'}} >“Khám với chuyên gia – Tận tâm như người nhà”</blockquote>
             </div>
 
             <div className="search-section">

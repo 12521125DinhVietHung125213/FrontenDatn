@@ -33,7 +33,7 @@ export default function Navbar() {
         
         <div className="topbar" style={{display: 'block'}}>
             <a href="">Giảm ngay 20% cho tất cả dịch vụ khám chữa bệnh tại phòng khám, giúp bạn an tâm hơn mà vẫn tiết kiệm chi phí!</a>
-            <a href="Allsanpham.html"> "Đăng ký ngay"</a>
+            <a href=""> "Đăng ký ngay"</a>
 
         </div>
         <div className="header">
@@ -86,21 +86,6 @@ export default function Navbar() {
                                         </ul>
                                     </div>
                                     
-                                    <div className="header__navbar-product-col">
-                                        <a href="" className="header__navbar-product-heading">Danh mục khoa</a>
-                                        
-                                        <ul>
-                                            {data.map((item)=>{
-                                                return( 
-                                                <li key={item.id_khoa} className="header__navbar-product-item ">
-                                                    <a href="" className="header__navbar-product-item-link">
-                                                        <p className="header__navbar-product-item-link-name">{item.ten_khoa}</p>
-                                                    </a>
-                                                </li>)
-                                            })}
-                                           
-                                        </ul>
-                                    </div>
                                     <div className="header__navbar-product-col">
                                         <a href="" className="header__navbar-product-heading">Xu hướng</a>
                                         <ul>

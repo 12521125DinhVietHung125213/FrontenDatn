@@ -39,13 +39,60 @@ noi_dung_huy:"",
 ghi_chu:"",
 };
 
+
+
+
 // Main component
 export default function OrderCart() {
     const [state, setState] = useState(initialState);
     const { user } = useUser();
-    const [orders, setOrders] = useState([]);
-    const [databacsi, setDatabacsi] = useState([]);
-    const [dataphong, setDataphongkham] = useState([]);
+    const [orders, setOrders] = useState([
+         {
+    ma_don_hang: "HD001",
+    ho_ten_bn: "Đinh Việt Hùng",
+    sdt_bn: "0987654321",
+    dia_chi_bn: "Xã Tân Dân, Khoái Châu, Hưng Yên",
+    trang_thai: "2",
+    ngay_kham: "2025-06-05",
+    gio_kham: "09:00",
+    id_bac_si: 11,
+    id_phong_kham: 4,
+    id_lich_kham: 101,
+    orderDetails: [
+      {
+        ma_chi_tiet_don_hang: 1,
+        ten_dich_vu: "Khám nội tổng quát",
+        hinh_anh_dv: "https://careplusvn.com/Uploads/t/go/goi-tong-quat-tieu-chuan-nam_0008574_730.png",
+        so_luong: 1,
+        gia: 300000
+      },
+
+    ]
+  }
+    ]);
+    const [databacsi, setDatabacsi] = useState([
+          {
+    id_bac_si: 11,
+    ho_ten: "Bác sĩ Nguyễn Văn Anh"
+  },
+  {
+    id_bac_si: 12,
+    ho_ten: "Bác sĩ Trần Thị Bình"
+  }
+    ]);
+    const [dataphong, setDataphongkham] = useState([
+
+          {
+    id_phong_kham: 4,
+    so_phong: "204",
+    ten_phong_kham: "Phòng khám Nội tổng quát"
+  },
+  {
+    id_phong_kham: 5,
+    so_phong: "205",
+    ten_phong_kham: "Phòng khám Tai – Mũi – Họng"
+  }
+    ]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
     const {noi_dung_huy,ghi_chu} = state;
@@ -60,22 +107,9 @@ export default function OrderCart() {
     const loadData = async () => {
         setLoading(true); // Bắt đầu tải dữ liệu
         try {
-            const response = await axios.get(
-                `http://localhost:5000/api/orderDetailsByCustomer/${user.id}`
-            );
 
-            // Lọc bỏ các đơn có trang_thai là 4 hoặc 5
-            const filteredOrders = response.data.filter(
-                (order) => order.trang_thai !== 4 && order.trang_thai !== 5
-            );
 
-            if (filteredOrders.length === 0) {
-                setError("Hiện chưa có thông tin lịch khám nào của bạn tồn tại trên hệ thống !");
-            } else {
-                setError(null); // Xoá lỗi cũ nếu có
-            }
-
-            setOrders(filteredOrders);
+            setOrders(orders);
         } catch (err) {
             setError("Không có dữ liệu!");
             setOrders([]); // Đảm bảo không hiển thị dữ liệu cũ
@@ -87,8 +121,8 @@ export default function OrderCart() {
 
     const loadDataBacsi = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/api/getallbs");
-            setDatabacsi(response.data);
+
+            setDatabacsi(databacsi);
         } catch (err) {
             console.error("Error fetching bác sĩ data:", err);
         }
@@ -96,10 +130,8 @@ export default function OrderCart() {
 
     const loadDataRoom = async () => {
         try {
-            const response = await axios.get(
-                "http://localhost:5000/api/getallphongkham"
-            );
-            setDataphongkham(response.data);
+   
+            setDataphongkham(dataphong);
         } catch (err) {
             console.error("Error fetching phòng khám data:", err);
         }
@@ -112,19 +144,15 @@ export default function OrderCart() {
 
     const handleSubmit = (e) => {
     e.preventDefault();
-    const statusToSend = 4;
     if ( !noi_dung_huy || !ghi_chu) {
       toast.error("Vui lòng nhập thông tin hủy lịch khám");
     } else {
       if (window.confirm("Bạn có muốn hủy lịch khám?")) {
-        axios.put(`http://localhost:5000/api/cancelAppointment/${id_lich_kham}`, {
-          trang_thai:statusToSend ,noi_dung_huy,ghi_chu
-        }).then(() => {
           setState(initialState);
           toast.success("Hủy lịch khám thành công!");
           setTimeout(() => navigate("/"), 500);
           setShowCancelModal(false);
-        }).catch((err) => toast.error(err.response.data));
+     
       }
     }
   }
@@ -162,7 +190,7 @@ export default function OrderCart() {
 
     return (
         <Fragment>
-            <div className="container-cart">
+            <div style={{width:'1500px', height:'1700px'}} className="container-cart">
                 {loading ? (
                     <Loading />
                 ) : error ? (

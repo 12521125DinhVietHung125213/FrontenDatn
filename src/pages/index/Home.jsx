@@ -268,9 +268,13 @@ export default function Home() {
                                 <div key={item.id_dich_vu} className="col p-2-4">
                                     <div id={`${item.id_dich_vu}`} className="product">
                                         <div className="product-img-wrap" style={{ marginBottom: '8px' }}>
-                                            <Link to={`/detail/${item.id_dich_vu}`} className="product-img product-img--small">
-                                                <img style={{width:"250px"}} className="product-img-1" src={item.hinh_anh_dv} alt="" />
-                                                <img style={{width:"250px"}} className="product-img-2" src={item.anh_hover} alt="" />
+                                            <Link
+                                            to={`/detail/${item.id_dich_vu}`}
+                                            className="product-img product-img--small"
+                                            onClick={() => localStorage.setItem('sanpham', JSON.stringify(item))}
+                                            >
+                                            <img className="product-img-1" src={item.hinh_anh_dv} alt="" />
+                                            <img className="product-img-2" src={item.anh_hover} alt="" />
                                             </Link>
                                             <div className="product-size">
                                                 <p>Thêm nhanh vào giỏ hàng +</p>

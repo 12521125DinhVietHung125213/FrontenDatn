@@ -2,8 +2,26 @@ import React, { useState, useEffect } from 'react';
 import { useUser } from '../../until/userContext';
 
 const MedicalChart = () => {
-const [patientInfo, setPatientInfo] = useState({});
-const [medicalRecords, setMedicalRecords] = useState([]);
+
+const [patientInfo, setPatientInfo] = useState({
+  ho_ten: "Đinh Việt Hùng",
+  so_dien_thoai: "0987654321",
+  gioi_tinh: 1,
+  ngay_sinh: "2003-06-18",
+  dia_chi: "Thôn An Lạc, Xã Nghĩa Hiệp, Hưng Yên"
+});
+
+const [medicalRecords, setMedicalRecords] = useState([
+  {
+    ngay_lap: "2025-05-30",
+    trieu_chung: "Ho khan kéo dài, sốt nhẹ về chiều",
+    tien_su_benh: "Tiền sử viêm phế quản mãn tính",
+    chan_doan: "Nghi viêm đường hô hấp trên",
+    phuong_phap_dieu_tri: "Uống thuốc kháng sinh và nghỉ ngơi",
+    ghi_chu: "Hẹn tái khám sau 5 ngày, nếu không đỡ cần chụp X-quang"
+  }
+]);
+
 const [currentPage, setCurrentPage] = useState(1); // Trang hiện tại
 const recordsPerPage = 1; // 1 lần khám mỗi trang
 const { user } = useUser(); // Lấy thông tin người dùng từ context
@@ -63,7 +81,7 @@ useEffect(() => {
   const totalPages = Math.ceil(medicalRecords.length / recordsPerPage);
 
   return (
-    <div style={{width:"1400px"}}  className="medical-chart">
+    <div style={{width:"1500px", height:'1600px'}}  className="medical-chart">
 
       {totalPages > 1 && (
         <div

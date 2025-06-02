@@ -165,7 +165,7 @@ export default function Details() {
         <li>{sanpham.thong_so_2}</li>
     </ul>
 
-    <img src="/images/chitietdichvukham.jpg" alt="Chi tiết dịch vụ"/>
+    <img src="https://benhvienvietduc.org/wp-content/uploads/2018/08/IMG-6527.jpg" alt="Chi tiết dịch vụ"/>
 </div>
 
     </div>
